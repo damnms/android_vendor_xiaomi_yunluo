@@ -773,6 +773,5 @@ PRODUCT_PACKAGES += \
     nvram_daemon \
     teei_daemon \
     v3avpud \
-    wlan_assistant \
     wmt_launcher \
     wmt_loader
