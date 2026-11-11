@@ -30,10 +30,10 @@ Redmi Pad (`yunluo`, MediaTek MT6789) needs alongside
 - Drop the prebuilt `vendor.mediatek.hardware.bluetooth.audio@2.1/@2.2`,
   `vendor.mediatek.hardware.netdagent@1.0` and `wlan_assistant` in
   favour of the open-source versions from `hardware/mediatek`.
-- Link the MTK blobs that use tinyxml2 against `libtinyxml2-v10`
-  (patchelf 0.17.2), matching the `blob_fixups` in the device tree's
-  `extract-files.py`. The platform tinyxml2 is no longer ABI-compatible
-  with these blobs.
+- Link the MTK blobs that use tinyxml2 against `libtinyxml2-v34`
+  from `hardware/lineage/compat` (patchelf 0.17.2), matching the
+  `blob_fixups` in the device tree's `extract-files.py`. The platform
+  tinyxml2 is no longer ABI-compatible with these Android 14 blobs.
 
 ## Regenerating
 
